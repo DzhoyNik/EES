@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import url("fonts.css");
+
+:root {
+    --color-1: #383838;
+    --color-2: #686868;
+    --color-3: #fff;
+    --color-4: #FFBB8D;
+    --color-5: #c0c0c0;
+    --color-6: #85f938;
+
+    --background-1: linear-gradient(135deg, #fff 50%, #FFD7B3);
+    --background-2: linear-gradient(45deg, #fff 50%, #FFD7B3);
+    --background-3: linear-gradient(135deg, #FFBB8D, #fba46a);
+    --background-4: linear-gradient(45deg, #383838, #252525 90%);
+    --background-5: #fff;
+    --background-6: linear-gradient(45deg, #383838 38%, #252525);
+    --background-7: #1E1E1E;
+    --background-8: linear-gradient(-135deg, #fff 50%, #FFD7B3);
+    --background-9: linear-gradient(-45deg, #fff 34%, #FFD7B3);
+    --background-10: linear-gradient(45deg, #f8f8f8 50%, #FFD7B3);
+    --background-11: #e8e8e8;
+    --background-12: #f9f9f9;
+    --background-13: #f3f3f3;
+
+    --border-1: 5px dashed var(--color-4);
+    --border-2: 2px solid var(--color-5);
+    --border-3: 2px dashed var(--color-5);
+    --border-4: 2px solid var(--color-4);
+    --border-5: 3px solid var(--color-6);
+    --border-6: 2px solid rgba(0, 0, 0, 0.1);
+    --border-radius-1: 10px;
+
+    --box-shadow-1: 0 0.25rem 10px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    user-select: none;
+}
+
+h1 {
+    color: var(--color-1);
+    font-size: 3rem;
+    font-family: "Roboto SemiBold", sans-serif;
+}
+
+h2 {
+    color: var(--color-1);
+    font-size: 2rem;
+    font-family: "Roboto SemiBold", sans-serif;
+}
+
+h3 {
+    color: var(--color-1);
+    font-size: 1.35rem;
+    font-family: "Roboto SemiBold", sans-serif;
+}
+
+p {
+    color: var(--color-1);
+    font-size: 1.5rem;
+    font-family: "Roboto Light", sans-serif;
+}
+
+a {
+    color: var(--color-2);
+    font-size: 1.75rem;
+    font-family: "Roboto Regular", sans-serif;
+    text-decoration: none;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+a:hover {
+    color: var(--color-4);
+    transition: 0.4s ease;
+}
+
+input, textarea {
+    padding: 0.75rem 1rem;
+    font-size: 1.35rem;
+    font-family: "Roboto Regular", sans-serif;
+    border: var(--border-2);
+    border-radius: var(--border-radius-1);
+}
+
+button {
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    color: var(--color-3);
+    font-size: 1.75rem;
+    font-family: "Roboto SemiBold", sans-serif;
+    background: var(--background-3);
+    border-radius: var(--border-radius-1);
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
