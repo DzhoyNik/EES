@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.course-item {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 57% 21% 19%;
+}
+
+.course-item h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.course-item p {
+    margin: 0 auto;
+}
+
+.course-item p>span {
+    font-family: "Roboto Regular", sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+}
+
+.course-active {
+    color: #2fe323;
+    background-color: #45eb392f;
+}
+
+.course-dev {
+    color: #7923e3;
+    background-color: #6039eb2f;
+}
+
+.course-lock {
+    color: #e32323;
+    background-color: #eb39392f;
+}
+
+.course-item .block-section-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-item .block-section-actions button {
+    width: 45px;
+    height: 45px;
+    margin: 0 0.5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-settings h1 {
+    margin-bottom: 1.5rem;
+}
+
+.course-settings .input-section p {
+    width: 25%;
+}
+
+.theme-section {
+    display: grid;
+    grid-template-columns: 87.5% 12.5%;
+}
+
+.theme-section .theme-action {
+    border-left: var(--border-1);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.theme-section .theme-action button {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

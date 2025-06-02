@@ -1,0 +1,57 @@
+.settings p {
+    width: 35%;
+}
+
+.settings .block-section:nth-child(2) p {
+    width: 10%;
+}
+
+.settings .block-section:nth-child(3) p {
+    width: 20%;
+}
+
+.input-section {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.settings-brand {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 73.5%;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.settings-brand .settings-logo input{
+    height: 100%;
+    margin: 0;
+    background-color: var(--background-3);
+}
+
+.settings-brand .settings-info .input-section:nth-child(2) {
+    margin: 0;
+}
+
+.type-FA {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.type-FA .FA {
+    cursor: pointer;
+    width: 15%;
+    margin-right: 2rem;
+    padding: 1.5rem;
+    border: var(--border-1);
+    border-radius: 35px;
+}
+
+.type-FA .FA.active {
+    background-color: var(--background-4);
+    border: var(--border-1);
+    border-color: var(--background-1);
+}

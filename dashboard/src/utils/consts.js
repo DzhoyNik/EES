@@ -1,0 +1,12 @@
+export const AUTH_ROUTE = "/";
+// export const STATISTICS_ROUTE = "/main";
+export const LESSON_ROUTE = "/lesson";
+export const NEWS_ROUTE = "/main";
+export const NEWS_CREATE_ROUTE = "/main/create";
+export const NEWS_EDIT_ROUTE = "/main/edit";
+export const COURSES_ROUTE = "/courses";
+export const STUDENTS_ROUTE = "/students";
+// export const EMPLOYEES_ROUTE = "/employees";
+// export const EMPLOYEES_EDIT_ROUTE = "/employees/edit";
+// export const EMPLOYEES_CREATE_ROUTE = "/employees/create";
+export const SETTINGS_ROUTE = "/settings";

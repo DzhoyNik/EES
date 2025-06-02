@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.block-section-item.user-personal {
+    display: flex;
+    justify-content: start;
+}
+
+.block-section-item.user-personal .user-photo {
+    width: 250px;
+    height: 250px;
+}
+
+.block-section-item.user-personal .user-photo input {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    background-color: var(--background-3);
+}
+
+.block-section-item.user-personal .user-fullName {
+    width: 76%;
+    height: 100%;
+    margin-left: 1rem;
+}
+
+.block-section-item.user-personal .user-fullName p {
+    width: 20%;
+}
+
+.block-section-item.user-feedback .input-section {
+    margin-bottom: 0;
+    width: 50%;
+    margin: 0 1rem;
+}
+
+.block-section-item.user-security .input-section {
+    margin-bottom: 0;
+    width: 50%;
+    margin: 0 1rem;
+}
+
+button {
+    margin-right: 1rem;
+}

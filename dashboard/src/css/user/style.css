@@ -1,0 +1,98 @@
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-section {
+    width: 19.35vw;
+    height: 25vh;
+    overflow: hidden;
+    margin-right: 0.55rem;
+    margin-bottom: 1rem;
+    border: var(--border-2);
+    border-width: 1px;
+    border-radius: 35px;
+}
+
+.user-section .user-personal {
+    height: 50%;
+    padding-bottom: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.user-personal .user-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: var(--background-1);
+}
+
+.user-personal .user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-personal .user-info {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.user-personal .user-info h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.user-section .user-another {
+    padding: 0.5rem 0;
+}
+
+.user-section .user-another p {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-section .user-another p>span {
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    font-family: "Roboto Regular", sans-serif;
+}
+
+.user-active {
+    color: #2fe323;
+    background-color: #45eb392f;
+}
+
+.user-lock {
+    color: #eb3939;
+    background-color: #eb393927;
+}
+
+.user-section .user-action {
+    padding: 0;
+    display: flex;
+}
+
+.user-section .user-action button {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: var(--background-1);
+}
+
+.user-section .user-action button:hover {
+    color: var(--color-1);
+    background-color: var(--background-1);
+}
