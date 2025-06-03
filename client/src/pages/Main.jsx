@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import { observer } from "mobx-react-lite"
 import { Context } from ".."
 import { fetchCourses } from "../http/coursesAPI"
@@ -12,7 +12,20 @@ import photo from "../img/photo.png"
 import reviews_1 from "../img/reviews/reviews_1.jpg"
 
 const Main = observer(() => {
+    const navigate = useNavigate()
     const { courseList } = useContext(Context)
+
+    const scrollToElement = () => {
+        const services = document.getElementById("services")
+
+        if (services) {
+            services.scrollIntoView({ behavior: "smooth" })
+        }
+    }
+
+    const handleClick = () => {
+        navigate("./auth")
+    }
 
     useEffect(() => {
         document.title = "Epic English School | Онлайн-школа"
@@ -21,7 +34,7 @@ const Main = observer(() => {
 
     return(
         <>
-            <div className="section">
+            <div className="section" id="main">
                 <div className="topbar">
                     <div className="topbar-logo">
                         <img src={logo} alt="" />
@@ -33,13 +46,13 @@ const Main = observer(() => {
                         <NavLink to="/">Отзывы</NavLink>
                     </div>
                     <div className="topbar-auth">
-                        <NavLink to="/">Войти</NavLink>
+                        <button type="button" onClick={handleClick}>Войти</button>
                     </div>
                 </div>
                 <div className="header">
                     <div className="header-text">
                         <h1>Epic English School - шаг к свободе общения на английском</h1>
-                        <button type="button">Записаться</button>
+                        <button type="button" onClick={scrollToElement}>Записаться</button>
                     </div>
                     <div className="header-img">
 
@@ -66,7 +79,7 @@ const Main = observer(() => {
                 <div className="advantages">
                     <h2>ПОЧЕМУ ИМЕННО МЫ?</h2>
                     <div className="advantages-body">
-                        <div className="section">
+                        <div className="section-advantages">
                             <div className="section-header">
                                 <div className="section-number">
                                     <h1>1.</h1>
@@ -79,7 +92,7 @@ const Main = observer(() => {
                                 <p>Вы можете выбирать удобное для себя время и место для занятий, не ограничивая себя географически.</p>
                             </div>
                         </div>
-                        <div className="section">
+                        <div className="section-advantages">
                             <div className="section-header">
                                 <div className="section-number">
                                     <h1>2.</h1>
@@ -92,7 +105,7 @@ const Main = observer(() => {
                                 <p>Все преподаватели ELIZAVETA имеют высокий уровень знания английского языка и опыт преподавания.</p>
                             </div>
                         </div>
-                        <div className="section">
+                        <div className="section-advantages">
                             <div className="section-header">
                                 <div className="section-number">
                                     <h1>3.</h1>
@@ -105,7 +118,7 @@ const Main = observer(() => {
                                 <p>Каждый обучающийся получает индивидуальную программу обучения, учитывающую его уровень и цели.</p>
                             </div>
                         </div>
-                        <div className="section">
+                        <div className="section-advantages">
                             <div className="section-header">
                                 <div className="section-number">
                                     <h1>4.</h1>
@@ -118,7 +131,7 @@ const Main = observer(() => {
                                 <p>Благодаря использованию современных технологий, уроки в ELIZAVETA проходят в интерактивном формате, что делает их более интересными и эффективными.</p>
                             </div>
                         </div>
-                        <div className="section">
+                        <div className="section-advantages">
                             <div className="section-header">
                                 <div className="section-number">
                                     <h1>5.</h1>
@@ -131,7 +144,7 @@ const Main = observer(() => {
                                 <p>Обучение в ELIZAVETA доступно по цене, которая значительно ниже, чем у традиционных школ.</p>
                             </div>
                         </div>
-                        <div className="section">
+                        <div className="section-advantages">
                             <div className="section-header">
                                 <div className="section-number">
                                     <h1>6.</h1>
@@ -146,7 +159,7 @@ const Main = observer(() => {
                         </div>
                     </div>
                 </div>
-                <div className="services">
+                <div className="services" id="services">
                     <div className="services-body">
                         <div className="services-title">
                             <h2>Наши услуги</h2>

@@ -3,7 +3,6 @@ const bcrypt = require("bcryptjs");
 const uuid = require("uuid");
 const path = require("path");
 const jwt = require("jsonwebtoken");
-const _path = require("path");
 const fs = require("fs");
 const { Employee, StatusEmployee } = require("../models/models");
 
@@ -165,7 +164,7 @@ class EmployeeController {
                 return next(ApiError.badRequest("Пользователь не найден"))
             }
 
-            const filePath = _path.join(__dirname, "../static/employee/", employee.photo)
+            const filePath = path.join(__dirname, "../static/employee/", employee.photo)
 
             try {
                 await fs.promises.unlink(filePath)

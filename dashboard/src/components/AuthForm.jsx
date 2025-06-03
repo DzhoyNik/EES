@@ -16,8 +16,8 @@ const AuthForm = observer(() => {
     const [password, setPassword] = useState('')
 
     const signIn = async () => {
+        let data;
         try {
-            let data;
             data = await sign_in(login, password)
             employee.setEmployee(data)
             employee.setIsAuth(true)

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.sidebar {
+    width: 22.5vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--background-5);
+    box-shadow: var(--box-shadow-1);
+}
+
+.sidebar .sidebar-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .sidebar-logo img {
+    width: 75%;
+}
+
+.sidebar .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-section {
+    font-size: 1.5rem;
+    color: var(--color-2);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    background: var(--background-13);
+}
+
+.sidebar-section.active {
+    color: var(--color-3);
+    background: var(--background-3);
+}
+
+.sidebar-section span {
+    margin-right: 0.5rem;
+}

@@ -12,7 +12,7 @@ import "../css/news/style.css"
 
 
 const News = observer(() => {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
     const location = useLocation()
     const { newsList } = useContext(Context)
 

@@ -1,1 +1,5 @@
-export const MAIN_ROUTE = "/";
+export const MAIN_ROUTE = "/"
+export const PAYMENT_ROUTE = "/payment"
+export const AUTH_ROUTE = "/auth"
+export const NEWS_ROUTE = "/news"
+export const THEMES_ROUTE = "/themes"

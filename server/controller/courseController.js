@@ -22,6 +22,15 @@ class CourseController {
         return res.json(courses);
     }
 
+    async getOne(req, res) {
+        const { id } = req.params
+        const course = await Course.findOne({
+            where: {id},
+            include: [{model: StatusCourses, as: "status", attributes: ['status'] }]
+        });
+        return res.json(course);
+    }
+
     async getAllThemeCourse(req, res) {
         const themes = await Theme.findAll();
         return res.json(themes);

@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+#payment {
+    width: 100vw;
+    height: 110vh;
+    overflow: hidden;
+    background: var(--background-1);
+}
+
+#payment .section-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+#payment .section-logo img {
+    width: 100%;
+}
+
+#payment .section-body {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 62.5% 35%;
+    justify-content: space-between;
+}
+
+#payment .section-body .section-date, .section-body .section-info {
+    background-color: var(--background-5);
+    box-shadow: var(--box-shadow-1);
+    position: relative;
+}
+
+#payment .section-date .section-back {
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+#payment .section-date .section-back h2 {
+    font-size: 1.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#payment .section-date h2, .section-info h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#payment .section-date .block-section {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+#payment .section-date .block-section .block-section-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#payment .section-date .block-section .block-section-photo {
+    width: 30%;
+    overflow: hidden;
+}
+
+#payment .section-date .block-section .block-section-photo input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#payment .section-date .block-section .block-section-date {
+    width: 67.5%;
+}
+
+#payment .section-date .block-section .block-section-date input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#payment .section-date .block-section .block-section-date input:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+#payment .section-date .block-section:nth-of-type(3) input:last-child {
+    margin-left: 3rem;
+}
+
+#payment .section-date .block-section:not(:last-child) {
+    border-bottom: var(--border-2);
+}
+
+#payment .section-date .block-section h3 {
+    margin-bottom: 1rem;
+}
+
+#payment .section-date .block-section button {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    font-size: 1.45rem;
+}
+
+#payment .section-border {
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: var(--border-1);
+    border-radius: var(--border-radius-1);
+    position: relative;
+}
+
+#payment .section-border p {
+    margin-top: 1.5rem;
+}
+
+#payment .section-border h2:last-child {
+    width: 85%;
+    position: absolute;
+    bottom: 1.5rem;
+}

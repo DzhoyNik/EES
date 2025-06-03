@@ -107,3 +107,59 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+
+.section {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background: var(--background-2);
+}
+
+#main {
+    display: block;
+}
+
+.section-body {
+    width: 77.5vw;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section-block {
+    width: 75%;
+    min-height: 85vh;
+    margin-top: 6rem;
+    padding: 2rem;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow-1);
+    background-color: var(--background-5);
+}
+
+.block-section {
+    margin-bottom: 3.5rem;
+    padding: 1.5rem;
+    border: var(--border-3);
+    border-radius: var(--border-radius-1);
+}
+
+.block-section:last-child {
+    margin: 0;
+}
+
+.input-section {
+    width: 100%;
+    position: relative;
+}
+
+.input-section span {
+    position: absolute;
+    top: 1.6rem;
+    left: 0.75rem;
+    font-size: 1.75rem;
+    font-weight: 300;
+}
